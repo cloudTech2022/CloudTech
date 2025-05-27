@@ -1,0 +1,124 @@
+.services {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service {
+  position: relative;
+  height: 300px;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.03);
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  transition: bottom 0.4s ease;
+}
+
+.service:hover .overlay {
+  bottom: 0;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.overlay p {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
+
+.contact-card {
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+  input,
+  textarea {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    background: transparent;
+    padding: 10px;
+    font-size: 1rem;
+    color: #000;
+    transition: border 0.3s;
+  }
+  input:focus,
+  textarea:focus {
+    border-bottom: 2px solid #f9c200;
+    outline: none;
+  }
+  .btn-yellow {
+    background-color: #f9c200;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 24px;
+    transition: all 0.3s ease;
+  }
+  .btn-yellow:hover {
+    background-color: #e0ac00;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  .aside {
+    background-color: #2b2b2b;
+    color: white;
+    padding: 40px;
+    border-radius: 0 0 16px 16px;
+  }
+  .aside li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: white;
+  }
+  .aside ion-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #f9c200;
+  }
+  @media (min-width: 768px) {
+    .aside {
+      border-radius: 0 16px 16px 0;
+    }
+  }
